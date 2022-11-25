@@ -19,23 +19,23 @@
             <div class="container__form--campus">
                 <div class="campus">
                     <label for="name">Nombre</label>
-                    <input type="text" id="name"  placeholder="Nombre" required="required" pattern="[A-Za-z]">
+                    <input type="text" id="name"  placeholder="Nombre" required="required" >
                 </div>
                 <div class="campus">
                     <label for="surname">Apellido</label>
-                    <input type="text" id="surname" placeholder="Apellido" required="required" pattern="[A-Za-z]">
+                    <input type="text" id="surname" placeholder="Apellido" required="required" >
                 </div>
                 <div class="campus">
                     <label for="user">Nombre de Usuario</label>
-                    <input type="text" id="user" placeholder="Usuario" required="required" pattern="[a-zA-Z0-9]+">
+                    <input type="text" id="user" placeholder="Usuario" required="required" >
                 </div>
                 <div class="campus">
                     <label for="email">Correo electrónico</label>
-                    <input type="text" id="email" placeholder="Correo electrónico" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$">
+                    <input type="text" id="email" placeholder="Correo electrónico" required="required" >
                 </div>
                 <div class="campus">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" placeholder="*****" required="required" pattern=".{8,}" maxlength="25">
+                    <input type="password" id="password" placeholder="*****" required="required" >
                 </div>
             </div>
             <a href="#" class="container__form--button">
@@ -51,25 +51,7 @@
         </form>
     </div>
 
-    <!-- Accion de envio (submit) del formulario de registro -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#registro_formulario").on("submit", sendForm);
-        });
-
-        function sendForm(){
-            event.preventDefault();
-            var formData = $(this).serialize();
-
-            $.ajax({
-                url: "", // Este es el url para la accion correspondiente con el formulario de contacto en el backend
-                data: formData,
-                success: function (data) {
-                    window.location.href = ""; // url de main
-                }
-            });
-        }
-    </script>
+  
 
 </body>
 </html>
