@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background-image: url("../img/img_fondo.jpg");
+    background-image: url("../img/img-fondo1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body{
 .container__form{
     background-color: #040005;
     border-radius: 4%;
-	margin: 5rem;
+	margin: 8rem;
 	text-align: center;
     color: #ffffff;
 	padding: 3rem;
@@ -33,6 +33,18 @@ body{
 
 .container__form--campus{
     padding: 2rem;
+}
+
+.campus {
+    display: flex;
+    flex-direction: column;
+}
+
+.campus a {
+    text-align: start;
+    color: #46c3d0;
+    margin-top: 4px;
+    text-decoration: none;
 }
 
 .campus label{
@@ -126,3 +138,30 @@ body{
     color: #46c3d0;
 }
 
+@media screen and (min-width: 1200px) {
+    .container__form--title{
+        font-size: 2.5rem;
+    }
+
+    .campus:not(:last-of-type) {
+        margin-bottom: 32px;
+    }
+
+    .campus:last-of-type {
+        margin-bottom: 12px;
+    }
+
+    .campus label{
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .campus input{
+        min-width: 300px;
+        font-size: 18px;
+    }
+
+    .container__form--login p {
+        font-size: 1.2rem;
+    }
+}
