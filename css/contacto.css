@@ -4,7 +4,9 @@ body.contacto{
     color:#0f0f0f;
     padding: 0 1.5em;
     font-family: 'Orbitron', sans-serif;
-    background-image: url("../img/imag_fondo2.jpg");
+    background-color: #1c0a3e;
+    
+
 }
 
 .content {
@@ -17,6 +19,7 @@ body.contacto{
 .logo{
     text-align: center;
     font-size: 3em;
+    color:rgb(231, 227, 227);
 }
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255,255,255, .3) ;
@@ -137,6 +140,12 @@ i.fa-solid, i.fa-brands {
 
     .contact-info p.contact-info-created_by {
         margin-bottom: 0;
+    }
+
+    body.contacto {
+        background-image: url("../img/img_fondo3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
